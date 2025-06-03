@@ -2,7 +2,7 @@
   "name": "orange-agent",
   "version": "1.0.0",
   "description": "AI Agent",
-  "main": "src/index.mjs",
+  "main": "index.mjs",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

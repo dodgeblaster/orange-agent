@@ -18,7 +18,7 @@ npm install orange-agent
 
 ```javascript
 import { createAgent } from 'orange-agent';
-import { createLLM } from 'llm-service';
+import { createLLM } from 'orange-llm';
 
 // Create LLM service
 const llm = createLLM({
@@ -35,7 +35,7 @@ const tools = [
 // Create agent
 const agent = createAgent({
   system: "You are a helpful assistant",
-  messages: ["Hello, how can I help you today?"],
+  messages: [],
   llm: llm,
   tools: tools,
   acceptAll: false // Optional: whether to accept all tool executions without confirmation
