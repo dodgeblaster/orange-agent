@@ -69,8 +69,8 @@ export function createAgent(config) {
   async function sendToLLM() {
     try {
       const messages = conversation.getAllMessages();
-      
       const response = await llm.invokeModel(messages);
+      eventBus.emit('llm:tokenUsage', response.totalTokens)
 
       if (response.type === 'ASSISTANT_TOOL_REQUEST') {
         await validateAndProcessTools(response.toolCalls || []);
