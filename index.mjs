@@ -293,6 +293,9 @@ export function createAgent(config) {
       if (handlers.tokenUsage) {
         eventBus.on('llm:tokenUsage', handlers.tokenUsage);
       }
+      if (handlers.costInfo) {
+        eventBus.on('llm:costInfo', handlers.costInfo);
+      }
       if (handlers.systemClosed) {
         eventBus.on('system:closed', handlers.systemClosed);
       }
