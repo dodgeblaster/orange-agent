@@ -1,6 +1,6 @@
 {
   "name": "orange-agent",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "AI Agent",
   "main": "index.mjs",
   "type": "module",
